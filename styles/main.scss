@@ -1,0 +1,199 @@
+@use "globals";
+@import "resets";
+
+body {
+  background-color: globals.$backgroundColor;
+  color: globals.$fontColor;
+  font: {
+    family: globals.$font;
+    size: globals.$fontSize;
+  }
+}
+
+p {
+  color: globals.$fontColorP;
+  line-height: globals.$lineHeight;
+}
+
+.btn-basics {
+  border: none;
+  border-radius: 25px;
+  color: white;
+  line-height: 28px;
+  font-weight: 700;
+  padding: 9px 24px 11px;
+}
+
+.btn-top {
+  @extend .btn-basics;
+  background: globals.$colorBtnTop;
+}
+
+.btn-top:hover {
+  background: globals.$colorBtnTopHover;
+}
+
+.btn-middle {
+  @extend .btn-basics;
+  background: globals.$colorBtnMiddle;
+  padding: 15px 37px 15px 38px;
+  border-radius: 30px;
+  margin-bottom: 46px;
+}
+
+.btn-middle:hover {
+  background: globals.$colorBtnMiddleHover;
+}
+
+.btn-bottom {
+  @extend .btn-basics;
+  background: globals.$colorBtnBottom;
+}
+
+.btn-bottom:hover {
+  background: globals.$colorBtnBottomHover;
+}
+
+// flex-container
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// header
+.flex-container-1 {
+  @extend .flex-container;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 38px;
+}
+
+.logo {
+  max-width: 89px;
+}
+
+// flex-container-2
+.flex-container-2 {
+  @extend .flex-container;
+
+  h1 {
+    font: {
+      size: 40px;
+      weight: 800;
+    }
+    line-height: 50.4px;
+    margin-bottom: 26px;
+  }
+
+  p {
+    margin-bottom: 24px;
+  }
+}
+
+span.keeptogether {
+  white-space: nowrap;
+}
+
+.flex-item {
+  flex: 100%;
+}
+
+.flex2-item2 {
+  @extend .flex-item;
+  position: relative;
+  height: 301px;
+  margin-bottom: 66px;
+  overflow: clip;
+}
+
+.main-image {
+  position: absolute;
+  top: -7%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// flex-container-3
+.flex-container-3 {
+  @extend .flex-container;
+}
+
+.flex3-item {
+  @extend .flex-item;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.flex3-item1 {
+  @extend .flex3-item;
+  background: globals.$colorBtnMiddle;
+  color: white;
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+div {
+  h2 {
+    font: {
+      size: 24px;
+      weight: 800;
+    }
+    line-height: 32px;
+    margin-bottom: 0;
+  }
+}
+
+.card-body,
+.card-footer {
+  padding-left: 28px;
+  padding-right: 29px;
+}
+
+.card-title {
+  margin-top: 56px;
+  margin-bottom: 16px;
+  font: {
+    size: 20px;
+    weight: 800;
+  }
+  line-height: 25.2px;
+}
+
+.card-footer {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+a {
+  color: globals.$fontColorA;
+  text-decoration: none;
+  font: {
+    size: 18px;
+    weight: 700;
+  }
+  line-height: 28px;
+}
+
+a:hover {
+  color: globals.$fontColorAHover;
+}
+
+.icons {
+  position: absolute;
+  left: 28px;
+  top: -28px;
+}
+
+//footer
+footer {
+  background-color: globals.$colorBtnTop;
+}
+
+.flex-container-4 {
+  @extend .flex-container;
+  justify-content: space-between;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  margin-top: 40px;
+}

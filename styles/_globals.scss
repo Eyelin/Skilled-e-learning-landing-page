@@ -1,0 +1,29 @@
+// variables
+$font: "Plus Jakarta Sans", sans-serif;
+$fontSize: 1rem;
+$lineHeight: 26px;
+// font colors
+$fontColor: hsla(234, 53%, 16%, 1);
+$fontColorP: hsla(233, 10%, 56%, 1);
+$fontColorA: hsla(341, 92%, 62%, 1);
+$fontColorAHover: hsla(341, 100%, 83%, 1);
+// background colors
+$backgroundColor: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+$primary-color-1: hsla(13, 100%, 64%, 1);
+$primary-color-2: hsla(322, 87%, 55%, 1);
+$colorBtnTop: hsla(234, 53%, 16%, 1);
+$colorBtnTopHover: hsla(234, 25%, 52%, 1);
+$colorBtnMiddle: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+$colorBtnMiddleHover: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  ),
+  linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+$colorBtnBottom: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+$colorBtnBottomHover: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  ),
+  linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
