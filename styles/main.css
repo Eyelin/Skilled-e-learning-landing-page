@@ -24,7 +24,6 @@ p {
   border: none;
   border-radius: 25px;
   color: white;
-  line-height: 28px;
   font-weight: 700;
   padding: 9px 24px 11px;
 }
@@ -56,31 +55,40 @@ p {
   overflow: clip;
 }
 
-.flex-container-4, .flex-container-3, .flex-container-2, .flex-container-1 {
+.flex-container-1 {
   display: flex;
   flex-wrap: wrap;
-}
-
-.flex-container-1 {
   justify-content: space-between;
-  padding-top: 16px;
+  margin-top: 0;
   margin-bottom: 38px;
+  padding-top: 16px;
+  padding-bottom: 0;
 }
 
 .logo {
   max-width: 89px;
 }
 
+.flex-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 span.keeptogether {
   white-space: nowrap;
 }
 
-.flex-item, .flex3-item, .flex3-item1, .flex2-item2, .flex2-item1 {
+.flex3-item, .flex3-item1, .flex2-item2, .flex2-item1 {
   flex: 100%;
 }
 
 .flex2-item1 h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 800;
   line-height: 50.4px;
   margin-bottom: 26px;
@@ -108,23 +116,28 @@ span.keeptogether {
 }
 
 .flex-container-3 {
-  margin-top: 109px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 109px;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.flex3-item, .flex3-item1 {
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  padding: 56px 22px 32px 32px;
+  position: relative;
 }
 
 .flex3-item1 {
   background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
   color: white;
-  padding: 24px 32px 32px;
-}
-
-.flex3-item, .flex3-item1 {
-  background-color: white;
-  border-radius: 10px;
-  margin-bottom: 40px;
-  padding: 56px 22px 32px 32px;
-  position: relative;
-  border: none;
+  padding: 24px 29px 32px 28px;
 }
 
 .card-body {
@@ -132,32 +145,33 @@ span.keeptogether {
   padding: 0;
 }
 .card-body h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 800;
   line-height: 32px;
+  margin-bottom: 0;
 }
 .card-body h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 800;
   line-height: 25.2px;
   margin-bottom: 16px;
 }
 
 .card-footer {
+  background-color: inherit;
+  border: none;
   margin-top: 24px;
   padding: 0;
-  border: none;
-  background-color: inherit;
 }
 
 a {
   color: hsl(341deg, 92%, 62%);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   line-height: 28px;
+  margin-bottom: 0;
 }
-
 a:hover {
   color: hsl(341deg, 100%, 83%);
 }
@@ -173,10 +187,13 @@ footer {
 }
 
 .flex-container-4 {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 0;
   padding-top: 36px;
   padding-bottom: 36px;
-  margin-top: 40px;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -206,8 +223,8 @@ footer {
 .flex3-item1 {
     flex: 50%;
     max-width: 339px;
-    padding: 56px 22px 32px 32px;
     margin-bottom: 56px;
+    padding: 56px 22px 32px 32px;
   }
   .flex-container-4 {
     margin-top: 30px;
@@ -216,12 +233,12 @@ footer {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   body {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   p {
     line-height: 28px;
   }
-  .btn-basics {
+  .btn-top, .btn-middle, .btn-bottom {
     border-radius: 30px;
     padding: 14px 31px 14px 32px;
   }
@@ -238,7 +255,7 @@ footer {
     flex: 42%;
   }
   .flex2-item1 h1 {
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: 800;
     line-height: 70px;
     margin-bottom: 29px;
@@ -268,12 +285,13 @@ footer {
     padding: 64px 32px 40px;
   }
   .card-body h2 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 40px;
+    margin-bottom: 0;
   }
   .card-body h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 800;
     line-height: 30px;
     margin-bottom: 24px;
@@ -293,6 +311,5 @@ footer {
   .flex3-item,
 .flex3-item1 {
     max-width: 350px;
-    margin-bottom: 80px;
   }
 }/*# sourceMappingURL=main.css.map */

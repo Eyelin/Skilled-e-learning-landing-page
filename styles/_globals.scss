@@ -2,13 +2,25 @@
 $font: "Plus Jakarta Sans", sans-serif;
 $fontSize: 1rem;
 $lineHeight: 26px;
+$fontSizeH1: 2.5rem;
+$fontSizeH2: 1.5rem;
+$fontSizeH3: 1.25rem;
+$fontSizeA: 1.125rem;
+// desktop
+$fontSizeDesktop: 1.125rem;
+$lineHeightDesktop: 28px;
+$fontSizeH1Desktop: 3.5rem;
+$fontSizeH2Desktop: 2rem;
+$fontSizeH3Desktop: 1.5rem;
 // font colors
 $fontColor: hsla(234, 53%, 16%, 1);
 $fontColorP: hsla(233, 10%, 56%, 1);
 $fontColorA: hsla(341, 92%, 62%, 1);
 $fontColorAHover: hsla(341, 100%, 83%, 1);
 // background colors
+// body
 $backgroundColor: linear-gradient(180deg, #ffffff, #f0f1ff);
+// buttons
 $colorBtnTop: hsla(234, 53%, 16%, 1);
 $colorBtnTopHover: hsla(234, 25%, 52%, 1);
 $colorBtnMiddle: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
@@ -25,5 +37,5 @@ $colorBtnBottomHover: linear-gradient(
     rgba(255, 255, 255, 0.5)
   ),
   linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
-$fontSizeDesktop: 18px;
-$lineHeightDesktop: 28px;
+$borderRadiusButton: 25px;
+$borderRadiusBiggerButton: 30px;
